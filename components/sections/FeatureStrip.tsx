@@ -17,7 +17,7 @@ export default function FeatureStrip() {
       aria-label="Feature highlights"
     >
       <div className="container-xl">
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-2 sm:gap-4">
+        <div className="hidden md:grid grid-cols-3 md:grid-cols-6 gap-2 sm:gap-4">
           {FEATURES.map(f => (
             <a
               key={f.label}

@@ -1,6 +1,6 @@
 "use client";
 import { useState, type FormEvent } from "react";
-import { Mail, Phone, Globe, MessageCircle, Send, CheckCircle } from "lucide-react";
+import { Mail, Globe, MessageCircle, Send, CheckCircle } from "lucide-react";
 
 interface FormData { name: string; phone: string; email: string; message: string; }
 type FormState = "idle" | "submitting" | "success" | "error";
@@ -35,10 +35,21 @@ export default function Contact() {
     ev.preventDefault();
     if (!validate()) return;
     setState("submitting");
-    // Replace this with your actual form submission (Formspree, Netlify Forms, API route)
-    await new Promise(r => setTimeout(r, 1200));
-    setState("success");
-    setForm({ name: "", phone: "", email: "", message: "" });
+    try {
+      const res = await fetch("https://formspree.io/f/xjgdezda", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setState("success");
+        setForm({ name: "", phone: "", email: "", message: "" });
+      } else {
+        setState("error");
+      }
+    } catch {
+      setState("error");
+    }
   }
 
   const CONTACT_INFO = [
@@ -49,12 +60,6 @@ export default function Contact() {
       href: "mailto:support@dailygroundcrew.com",
     },
     {
-      icon: Phone,
-      label: "Phone",
-      value: "+91 12345 67890",
-      href: "tel:+911234567890",
-    },
-    {
       icon: Globe,
       label: "Website",
       value: "dailygroundcrew.com",
@@ -63,8 +68,8 @@ export default function Contact() {
     {
       icon: MessageCircle,
       label: "WhatsApp Support",
-      value: "Chat with us",
-      href: "https://wa.me/911234567890?text=Hi%2C%20I%20need%20help%20with%20DailyGroundCrew",
+      value: "+91 90147 •••••",
+      href: "https://wa.me/919014704750?text=Hi%2C%20I%20need%20help%20with%20DailyGroundCrew",
     },
   ];
 

@@ -42,7 +42,7 @@ export default function AppShowcase() {
                     </div>
                   </div>
                   <AppImage
-                    src="/assets/app-screenshot.jpeg"
+                    src="/assets/app-screenshot.png"
                     width={700}
                     height={1400}
                     alt="DailyGroundCrew mobile app screenshot"

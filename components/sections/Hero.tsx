@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="absolute bottom-20 left-0 w-72 h-72 bg-accent-100/40 rounded-full blur-3xl" aria-hidden />
 
       <div className="container-xl relative z-10 py-12 md:py-20">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
 
           {/* Left content */}
           <div className="space-y-7 animate-on-scroll visible">
@@ -39,7 +39,32 @@ export default function Hero() {
               </h1>
             </div>
 
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl">
+            {/* Image shown here on mobile only */}
+            <div className="relative lg:hidden">
+              <AppImage
+                src="/assets/hero-construction-workers.png"
+                width={1400}
+                height={1000}
+                alt="Construction workers on a building site"
+                className="w-full h-auto rounded-xl"
+                priority
+              />
+              <div
+                className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-card-hover px-4 py-3
+                           flex items-center gap-3 z-20 border border-gray-100"
+                aria-hidden
+              >
+                <div className="w-10 h-10 rounded-xl bg-green-100 flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse-slow" />
+                </div>
+                <div>
+                  <p className="font-bold text-sm text-gray-900">2,400+ Workers</p>
+                  <p className="text-xs text-green-600 font-medium">Available now</p>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl mt-6">
               Hire skilled workers, manage sites, rent equipment, buy materials
               and use <strong className="text-primary font-semibold">100+ construction tools</strong> from
               one powerful platform.
@@ -94,8 +119,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right — image placeholder */}
-          <div className="relative animate-on-scroll-right visible">
+          {/* Right — image (desktop only) */}
+          <div className="relative animate-on-scroll-right visible hidden lg:block">
             {/* Main illustration */}
             <div className="relative z-10">
               <AppImage
