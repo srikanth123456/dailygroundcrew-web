@@ -80,11 +80,23 @@ const SECTIONS = [
     ],
   },
   {
-    title: "7. Children's Privacy",
+    title: "7. Account Deletion",
+    body: "Users can delete their account from within the app settings or by contacting support@dailygroundcrew.com. Account data will be permanently deleted within 30 days, except where retention is required by law or for fraud prevention.",
+  },
+  {
+    title: "8. User Generated Content",
+    body: "DailyGroundCrew allows users to create listings, post jobs, send messages, ratings, and reviews. Users are responsible for the content they publish. We reserve the right to remove content that violates our Terms of Use, is misleading, abusive, fraudulent, or illegal.",
+  },
+  {
+    title: "9. Push Notifications",
+    body: "We may send push notifications related to job opportunities, messages, offers, account activity, announcements, and service updates. Users can manage notification preferences through their device settings.",
+  },
+  {
+    title: "10. Children's Privacy",
     body: "This app is not intended for users under 18 years of age. We do not knowingly collect data from minors.",
   },
   {
-    title: "8. Contact",
+    title: "11. Contact",
     body: "For privacy-related questions or data requests, email us at support@dailygroundcrew.com",
   },
 ];
@@ -141,12 +153,20 @@ export default function PrivacyPage() {
         </div>
 
         {/* Footer note */}
-        <p className="mt-8 text-center text-xs text-gray-400">
-          Questions?{" "}
-          <a href="mailto:support@dailygroundcrew.com" className="text-primary hover:underline">
-            support@dailygroundcrew.com
-          </a>
-        </p>
+        <div className="mt-8 text-center space-y-1">
+          <p className="text-xs text-gray-400">
+            Questions?{" "}
+            <a href="mailto:support@dailygroundcrew.com" className="text-primary hover:underline">
+              support@dailygroundcrew.com
+            </a>
+          </p>
+          <p className="text-xs text-gray-400">
+            Website:{" "}
+            <a href="https://www.dailygroundcrew.com" className="text-primary hover:underline">
+              https://www.dailygroundcrew.com
+            </a>
+          </p>
+        </div>
       </div>
     </main>
   );
