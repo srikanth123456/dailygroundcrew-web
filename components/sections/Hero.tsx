@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="absolute top-32 right-0 w-96 h-96 bg-secondary-100/40 rounded-full blur-3xl" aria-hidden />
       <div className="absolute bottom-20 left-0 w-72 h-72 bg-accent-100/40 rounded-full blur-3xl" aria-hidden />
 
-      <div className="container-xl relative z-10 py-12 md:py-20">
+      <div className="container-xl relative z-10 py-4 md:py-20">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
 
           {/* Left content */}

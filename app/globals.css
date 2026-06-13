@@ -36,15 +36,15 @@
   }
 
   .section-padding {
-    @apply py-16 md:py-24;
+    @apply py-8 md:py-24;
   }
 
   .section-heading {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-primary leading-tight;
+    @apply text-2xl md:text-4xl lg:text-5xl font-bold text-primary leading-tight;
   }
 
   .section-sub {
-    @apply text-lg text-gray-600 max-w-2xl mx-auto mt-4 leading-relaxed;
+    @apply text-sm md:text-lg text-gray-600 max-w-2xl mx-auto mt-2 md:mt-4 leading-relaxed;
   }
 
   .btn-primary {

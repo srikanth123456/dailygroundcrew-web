@@ -163,13 +163,21 @@ export default function Footer() {
             </p>
             <VisitCounter />
           </div>
-          <div className="flex items-center gap-5">
-            <Link href="/privacy" className="text-white/50 hover:text-white text-xs transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="text-white/50 hover:text-white text-xs transition-colors">
-              Terms of Use
-            </Link>
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            <p className="text-white/40 text-xs text-center">
+              This site uses essential cookies only. See our{" "}
+              <Link href="/privacy" className="text-white/60 hover:text-white underline transition-colors">
+                Privacy Policy
+              </Link>.
+            </p>
+            <div className="flex items-center gap-4">
+              <Link href="/privacy" className="text-white/50 hover:text-white text-xs transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/terms" className="text-white/50 hover:text-white text-xs transition-colors">
+                Terms of Use
+              </Link>
+            </div>
           </div>
         </div>
       </div>
