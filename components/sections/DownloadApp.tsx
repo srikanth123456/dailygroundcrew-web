@@ -1,4 +1,4 @@
-import PlaceholderImage from "@/components/ui/PlaceholderImage";
+import AppImage from "@/components/ui/AppImage";
 
 export default function DownloadApp() {
   return (
@@ -33,7 +33,7 @@ export default function DownloadApp() {
             {/* App store buttons */}
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://play.google.com/store/apps/details?id=com.srikanthputta.dailygroundcrew"
+                href="https://play.google.com/store/apps/details?id=com.dailygroundcrew.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-black text-white px-6 py-3.5 rounded-xl
@@ -85,21 +85,24 @@ export default function DownloadApp() {
             </div>
           </div>
 
-          {/* Right — QR code placeholder */}
+          {/* Right — QR code */}
           <div className="flex flex-col sm:flex-row items-center gap-8">
             <div className="text-center space-y-3">
-              {/* REPLACE: /public/images/qr-code.png — 500×500px */}
-              <div className="w-44 h-44 bg-white rounded-2xl p-3 shadow-lg mx-auto">
-                <PlaceholderImage
-                  name="qr-code-play-store"
+              <a
+                href="https://play.google.com/store/apps/details?id=com.dailygroundcrew.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-44 h-44 bg-white rounded-2xl p-3 shadow-lg mx-auto"
+                aria-label="Scan or click to get DailyGroundCrew on Google Play"
+              >
+                <AppImage
+                  src="/assets/playstore-qr.png"
                   width={500}
                   height={500}
-                  hint="QR code linking to Google Play Store listing"
-                  alt="Scan to download DailyGroundCrew"
-                  rounded="rounded-xl"
+                  alt="Scan to download DailyGroundCrew on Google Play"
                   className="w-full h-full"
                 />
-              </div>
+              </a>
               <p className="text-white/70 text-xs font-medium">Scan to download</p>
             </div>
 

@@ -86,7 +86,7 @@ const jsonLd = {
         areaServed: "IN",
       },
       sameAs: [
-        "https://play.google.com/store/apps/details?id=com.srikanthputta.dailygroundcrew",
+        "https://play.google.com/store/apps/details?id=com.dailygroundcrew.app",
       ],
     },
     {

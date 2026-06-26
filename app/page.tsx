@@ -3,7 +3,6 @@ import Footer             from "@/components/layout/Footer";
 import Hero               from "@/components/sections/Hero";
 import FeatureStrip       from "@/components/sections/FeatureStrip";
 import AppShowcase        from "@/components/sections/AppShowcase";
-import Statistics         from "@/components/sections/Statistics";
 import ConstructionToolkit from "@/components/sections/ConstructionToolkit";
 import Estimator          from "@/components/sections/Estimator";
 import HowItWorks         from "@/components/sections/HowItWorks";
@@ -24,7 +23,6 @@ export default function Home() {
         <Hero />
         <FeatureStrip />
         <AppShowcase />
-        <Statistics />
         <ConstructionToolkit />
         <Estimator />
         <HowItWorks />

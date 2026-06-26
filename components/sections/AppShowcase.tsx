@@ -95,7 +95,7 @@ export default function AppShowcase() {
 
             <div className="flex flex-wrap gap-3 pt-2">
               <a
-                href="https://play.google.com/store/apps/details?id=com.srikanthputta.dailygroundcrew"
+                href="https://play.google.com/store/apps/details?id=com.dailygroundcrew.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 bg-gray-900 text-white px-5 py-3 rounded-xl

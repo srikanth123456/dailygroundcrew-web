@@ -89,14 +89,16 @@ export default function Header() {
 
             {/* CTA + mobile toggle */}
             <div className="flex items-center gap-3">
-              <Link
-                href="#download"
+              <a
+                href="https://play.google.com/store/apps/details?id=com.dailygroundcrew.app"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-accent text-sm py-2.5 px-5 hidden sm:inline-flex"
-                aria-label="Download App"
+                aria-label="Download App on Google Play"
               >
                 <Download className="w-4 h-4" />
                 <span>Download App</span>
-              </Link>
+              </a>
 
               <button
                 className="lg:hidden w-10 h-10 rounded-xl flex items-center justify-center
@@ -136,14 +138,16 @@ export default function Header() {
             </Link>
           ))}
           <div className="pt-4 border-t border-gray-100 mt-2">
-            <Link
-              href="#download"
+            <a
+              href="https://play.google.com/store/apps/details?id=com.dailygroundcrew.app"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
               className="btn-accent w-full justify-center text-base py-3"
             >
               <Download className="w-5 h-5" />
               Download App
-            </Link>
+            </a>
           </div>
         </nav>
       </div>
