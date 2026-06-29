@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Terms & Conditions — DailyGroundCrew",
   description: "Terms and Conditions for using the DailyGroundCrew platform.",
-  alternates: { canonical: "https://dailygroundcrew.com/terms" },
+  alternates: { canonical: "https://www.dailygroundcrew.com/terms" },
 };
 
 const SECTIONS = [

@@ -15,8 +15,8 @@ export default function ServicePageLayout({
   children: React.ReactNode;
 }) {
   const schema = breadcrumbSchema([
-    { name: "Home", url: "https://dailygroundcrew.com" },
-    { name: pageTitle, url: `https://dailygroundcrew.com${path}` },
+    { name: "Home", url: "https://www.dailygroundcrew.com" },
+    { name: pageTitle, url: `https://www.dailygroundcrew.com${path}` },
   ]);
 
   return (

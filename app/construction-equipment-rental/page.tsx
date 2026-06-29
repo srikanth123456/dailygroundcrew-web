@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Construction Equipment Rental — JCBs, Cranes, Mixers & Scaffolding",
   description:
     "Rent JCBs, cranes, concrete mixers, scaffolding and 50+ construction machines near you. Compare owners, rental rates and availability directly on DailyGroundCrew.",
-  alternates: { canonical: "https://dailygroundcrew.com/construction-equipment-rental" },
+  alternates: { canonical: "https://www.dailygroundcrew.com/construction-equipment-rental" },
 };
 
 const EQUIPMENT = [

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Construction Cost Estimator & Calculator — Free House Building Cost Calculator",
   description:
     "Estimate house construction cost, material quantities and labour cost for new builds, renovations, painting and flooring. Free construction calculator on DailyGroundCrew.",
-  alternates: { canonical: "https://dailygroundcrew.com/construction-estimator" },
+  alternates: { canonical: "https://www.dailygroundcrew.com/construction-estimator" },
 };
 
 const CALCULATORS = [

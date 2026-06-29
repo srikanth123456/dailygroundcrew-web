@@ -16,7 +16,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dailygroundcrew.com"),
+  metadataBase: new URL("https://www.dailygroundcrew.com"),
   title: {
     default: "DailyGroundCrew – Find & Hire Skilled Workers Fast",
     template: "%s | DailyGroundCrew",
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
     "construction estimator",
     "DailyGroundCrew",
   ],
-  authors: [{ name: "DailyGroundCrew", url: "https://dailygroundcrew.com" }],
+  authors: [{ name: "DailyGroundCrew", url: "https://www.dailygroundcrew.com" }],
   creator: "DailyGroundCrew",
   publisher: "DailyGroundCrew",
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://dailygroundcrew.com",
+    url: "https://www.dailygroundcrew.com",
     siteName: "DailyGroundCrew",
     title: "DailyGroundCrew – Find & Hire Skilled Workers Fast",
     description:
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
       "India's leading construction workforce platform. Hire workers, manage sites, rent equipment & use 100+ tools.",
     creator: "@dailygroundcrew",
   },
-  alternates: { canonical: "https://dailygroundcrew.com" },
+  alternates: { canonical: "https://www.dailygroundcrew.com" },
   manifest: "/manifest.json",
   icons: {
     icon: [
@@ -73,10 +73,10 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://dailygroundcrew.com/#org",
+      "@id": "https://www.dailygroundcrew.com/#org",
       name: "DailyGroundCrew",
-      url: "https://dailygroundcrew.com",
-      logo: "https://dailygroundcrew.com/logo.png",
+      url: "https://www.dailygroundcrew.com",
+      logo: "https://www.dailygroundcrew.com/logo.png",
       contactPoint: {
         "@type": "ContactPoint",
         email: "support@dailygroundcrew.com",
@@ -90,11 +90,11 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://dailygroundcrew.com/#website",
-      url: "https://dailygroundcrew.com",
+      "@id": "https://www.dailygroundcrew.com/#website",
+      url: "https://www.dailygroundcrew.com",
       name: "DailyGroundCrew",
       description: "India's trusted platform to find & hire skilled construction workers",
-      publisher: { "@id": "https://dailygroundcrew.com/#org" },
+      publisher: { "@id": "https://www.dailygroundcrew.com/#org" },
     },
     {
       "@type": "MobileApplication",
@@ -119,14 +119,14 @@ const jsonLd = {
       description:
         "Construction estimator, brick calculator, site attendance and worker hiring app for contractors and builders in India",
       offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
-      url: "https://dailygroundcrew.com",
+      url: "https://www.dailygroundcrew.com",
     },
     {
       "@type": "LocalBusiness",
-      "@id": "https://dailygroundcrew.com/#local",
+      "@id": "https://www.dailygroundcrew.com/#local",
       name: "DailyGroundCrew",
-      url: "https://dailygroundcrew.com",
-      image: "https://dailygroundcrew.com/logo.png",
+      url: "https://www.dailygroundcrew.com",
+      image: "https://www.dailygroundcrew.com/logo.png",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Hyderabad",

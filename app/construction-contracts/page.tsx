@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Bulk Construction Contracts — Get Quotes from Verified Builders",
   description:
     "Post your construction project (200+ yards), receive quotes from verified builders, compare and award the best contract — free on DailyGroundCrew.",
-  alternates: { canonical: "https://dailygroundcrew.com/construction-contracts" },
+  alternates: { canonical: "https://www.dailygroundcrew.com/construction-contracts" },
 };
 
 const STEPS = [

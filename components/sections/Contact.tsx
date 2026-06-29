@@ -63,7 +63,7 @@ export default function Contact() {
       icon: Globe,
       label: "Website",
       value: "dailygroundcrew.com",
-      href: "https://dailygroundcrew.com",
+      href: "https://www.dailygroundcrew.com",
     },
     {
       icon: MessageCircle,

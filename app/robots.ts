@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://dailygroundcrew.com/sitemap.xml",
+    sitemap: "https://www.dailygroundcrew.com/sitemap.xml",
   };
 }

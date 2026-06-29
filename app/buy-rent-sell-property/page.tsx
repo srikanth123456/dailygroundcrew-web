@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Buy, Rent & Sell Property Online — Plots, Apartments & Commercial Spaces",
   description:
     "Post your property for sale or rent and reach genuine buyers and tenants. Browse plots, apartments, villas and commercial spaces directly on DailyGroundCrew.",
-  alternates: { canonical: "https://dailygroundcrew.com/buy-rent-sell-property" },
+  alternates: { canonical: "https://www.dailygroundcrew.com/buy-rent-sell-property" },
 };
 
 const PROPERTY_TYPES = [

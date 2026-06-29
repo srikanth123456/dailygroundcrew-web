@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Buy Construction Materials Online — Cement, Steel, Bricks & Sand",
   description:
     "Buy cement, steel, bricks, sand and construction materials at competitive rates from verified sellers near you. Compare prices and order directly on DailyGroundCrew.",
-  alternates: { canonical: "https://dailygroundcrew.com/buy-construction-materials" },
+  alternates: { canonical: "https://www.dailygroundcrew.com/buy-construction-materials" },
 };
 
 const MATERIALS = [

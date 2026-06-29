@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Hire Construction Workers Online — Masons, Carpenters, Electricians & Plumbers",
   description:
     "Hire verified masons, carpenters, electricians and plumbers near you. Post a job in minutes, compare ratings, and pay daily wages directly — free on DailyGroundCrew.",
-  alternates: { canonical: "https://dailygroundcrew.com/hire-construction-workers" },
+  alternates: { canonical: "https://www.dailygroundcrew.com/hire-construction-workers" },
 };
 
 const TRADES = [
