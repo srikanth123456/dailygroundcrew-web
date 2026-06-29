@@ -67,10 +67,10 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white" role="contentinfo">
       <div className="container-xl py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
 
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div className="col-span-2 lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl overflow-hidden bg-white/20">
                 <AppImage src="/assets/logo.png" width={40} height={40} alt="DailyGroundCrew logo" className="w-full h-full object-contain" />
@@ -130,9 +130,9 @@ export default function Footer() {
           </div>
 
           {/* Support */}
-          <div>
+          <div className="col-span-2 lg:col-span-1">
             <h3 className="font-semibold text-sm uppercase tracking-wider text-white/50 mb-4">Support</h3>
-            <ul className="space-y-2.5">
+            <ul className="grid grid-cols-2 lg:grid-cols-1 gap-2.5 lg:space-y-2.5">
               {SUPPORT_LINKS.map(l => (
                 <li key={l.label}>
                   <Link href={l.href} className="text-white/75 hover:text-white text-sm transition-colors">

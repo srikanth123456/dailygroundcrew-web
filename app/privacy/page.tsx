@@ -4,6 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy — DailyGroundCrew",
   description: "Privacy Policy for the DailyGroundCrew platform.",
+  alternates: { canonical: "https://dailygroundcrew.com/privacy" },
 };
 
 const SECTIONS = [

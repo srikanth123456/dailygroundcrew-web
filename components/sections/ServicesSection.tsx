@@ -1,6 +1,7 @@
 "use client";
-import { Truck, Building2, Package, Recycle } from "lucide-react";
+import { Truck, Building2, Package, Recycle, Home, FileText } from "lucide-react";
 import AppImage from "@/components/ui/AppImage";
+import PlaceholderImage from "@/components/ui/PlaceholderImage";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
 const SERVICES = [
@@ -15,6 +16,12 @@ const SERVICES = [
   },
   {
     icon: Recycle,   title: "Scrap & Used",    desc: "Buy and sell used equipment, scrap metal and second-hand materials",      image: "/assets/scrap-used.png",      color: "text-emerald-600 bg-emerald-50",
+  },
+  {
+    icon: Home,      title: "Buy, Rent & Sell Property", desc: "Land, plots, residential & commercial properties — buy, rent or sell directly", image: null, color: "text-purple-600 bg-purple-50",
+  },
+  {
+    icon: FileText,  title: "Bulk Material Contracts", desc: "Large-volume contracts for cement, steel, sand and aggregates at negotiated rates", image: null, color: "text-rose-600 bg-rose-50",
   },
 ];
 
@@ -37,7 +44,7 @@ export default function ServicesSection() {
         </div>
 
         <div
-          className={`grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12
+          className={`grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mt-12
                       transition-all duration-700 delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
         >
           {SERVICES.map((svc, i) => (
@@ -47,13 +54,24 @@ export default function ServicesSection() {
               style={{ transitionDelay: `${i * 60}ms` }}
             >
               <div className="aspect-video overflow-hidden">
-                <AppImage
-                  src={svc.image}
-                  width={800}
-                  height={500}
-                  alt={svc.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+                {svc.image ? (
+                  <AppImage
+                    src={svc.image}
+                    width={800}
+                    height={500}
+                    alt={svc.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                ) : (
+                  <PlaceholderImage
+                    name={svc.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}
+                    width={800}
+                    height={500}
+                    alt={svc.title}
+                    rounded="rounded-none"
+                    className="group-hover:scale-105 transition-transform duration-300"
+                  />
+                )}
               </div>
               <div className="p-5 space-y-2">
                 <div className={`w-9 h-9 rounded-lg flex items-center justify-center ${svc.color}`}>

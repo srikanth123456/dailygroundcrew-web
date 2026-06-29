@@ -1,5 +1,13 @@
 import type { Metadata, Viewport } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -41,21 +49,12 @@ export const metadata: Metadata = {
     title: "DailyGroundCrew – Find & Hire Skilled Workers Fast",
     description:
       "Hire skilled construction workers, manage sites, rent equipment and use 100+ construction tools. India's trusted construction workforce platform.",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "DailyGroundCrew – Construction Workforce Platform",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "DailyGroundCrew – Find & Hire Skilled Workers Fast",
     description:
       "India's leading construction workforce platform. Hire workers, manage sites, rent equipment & use 100+ tools.",
-    images: ["/og-image.jpg"],
     creator: "@dailygroundcrew",
   },
   alternates: { canonical: "https://dailygroundcrew.com" },
@@ -117,14 +116,12 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`scroll-smooth ${inter.variable}`}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className="antialiased">{children}</body>
     </html>

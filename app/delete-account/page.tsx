@@ -4,6 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Delete Account — DailyGroundCrew",
   description: "Request permanent deletion of your DailyGroundCrew account and data.",
+  alternates: { canonical: "https://dailygroundcrew.com/delete-account" },
 };
 
 export default function DeleteAccountPage() {

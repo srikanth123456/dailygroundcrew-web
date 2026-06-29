@@ -107,7 +107,7 @@ export default function DownloadApp() {
             </div>
 
             {/* Feature highlights */}
-            <div className="space-y-4 flex-1">
+            <div className="grid grid-cols-2 sm:grid-cols-1 gap-3 sm:gap-4 flex-1">
               {[
                 { emoji: "🆓", text: "Free to download & use" },
                 { emoji: "📴", text: "Tools work offline" },
@@ -115,9 +115,9 @@ export default function DownloadApp() {
                 { emoji: "🔒", text: "Verified workers only" },
                 { emoji: "⚡", text: "Hire in minutes" },
               ].map(f => (
-                <div key={f.text} className="flex items-center gap-3">
-                  <span className="text-xl" aria-hidden>{f.emoji}</span>
-                  <span className="text-white/90 font-medium">{f.text}</span>
+                <div key={f.text} className="flex items-center gap-2 sm:gap-3">
+                  <span className="text-lg sm:text-xl flex-shrink-0" aria-hidden>{f.emoji}</span>
+                  <span className="text-white/90 font-medium text-sm sm:text-base leading-tight">{f.text}</span>
                 </div>
               ))}
             </div>
