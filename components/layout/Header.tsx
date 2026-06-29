@@ -63,9 +63,9 @@ export default function Header() {
               <div className="w-10 h-10 rounded-xl overflow-hidden flex-shrink-0">
                 <AppImage src="/assets/logo.png" width={40} height={40} alt="DailyGroundCrew logo" className="w-full h-full object-contain" />
               </div>
-              <div className="hidden sm:block">
-                <p className="text-primary font-bold text-lg leading-none">DailyGroundCrew</p>
-                <p className="text-gray-500 text-xs leading-none mt-0.5">Find &amp; Hire Skilled Workers Fast</p>
+              <div>
+                <p className="text-primary font-bold text-base sm:text-lg leading-none">DailyGroundCrew</p>
+                <p className="hidden sm:block text-gray-500 text-xs leading-none mt-0.5">Find &amp; Hire Skilled Workers Fast</p>
               </div>
             </Link>
 

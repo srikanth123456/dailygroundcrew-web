@@ -17,6 +17,12 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  @media (max-width: 767px) {
+    html {
+      font-size: 90%;
+    }
+  }
+
   body {
     @apply text-gray-900 bg-white font-sans;
   }
