@@ -18,7 +18,7 @@ const SERVICES = [
     icon: Recycle,   title: "Scrap & Used",    desc: "Buy and sell used equipment, scrap metal and second-hand materials",      image: "/assets/scrap-used.png",      color: "text-emerald-600 bg-emerald-50",
   },
   {
-    icon: Home,      title: "Buy, Rent & Sell Property", desc: "Land, plots, residential & commercial properties — buy, rent or sell directly", image: null, color: "text-purple-600 bg-purple-50",
+    icon: Home,      title: "Buy, Rent & Sell Property", desc: "Land, plots, residential & commercial properties — buy, rent or sell directly", image: "/assets/property-buy-rent-sell.png", color: "text-purple-600 bg-purple-50",
   },
   {
     icon: FileText,  title: "Bulk Material Contracts", desc: "Large-volume contracts for cement, steel, sand and aggregates at negotiated rates", image: "/assets/bulk-contracts.png", color: "text-rose-600 bg-rose-50",
