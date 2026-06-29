@@ -1,34 +1,58 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X, Download } from "lucide-react";
 import AppImage from "@/components/ui/AppImage";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
-  { label: "Features",    href: "#features" },
-  { label: "How It Works",href: "#how-it-works" },
-  { label: "Toolkit",     href: "#toolkit" },
-  { label: "Categories",  href: "#categories" },
-  { label: "About",       href: "#about" },
-  { label: "Contact",     href: "#contact" },
+  { label: "Features",    href: "/#features" },
+  { label: "How It Works",href: "/#how-it-works" },
+  { label: "Toolkit",     href: "/#toolkit" },
+  { label: "Categories",  href: "/#categories" },
+  { label: "About",       href: "/#about" },
+  { label: "Contact",     href: "/#contact" },
 ];
 
 export default function Header() {
+  const pathname = usePathname();
   const [scrolled,   setScrolled]   = useState(false);
   const [menuOpen,   setMenuOpen]   = useState(false);
   const [activeLink, setActiveLink] = useState("");
 
-  const handleScroll = useCallback(() => {
-    setScrolled(window.scrollY > 20);
-    const sections = NAV_LINKS.map(l => l.href.replace("#", ""));
-    for (const id of [...sections].reverse()) {
+  // Next.js Link doesn't auto-scroll to a hash when the pathname is unchanged
+  // (e.g. clicking "/#features" while already on "/"), so handle it manually.
+  const handleNavClick = useCallback((href: string) => (e: React.MouseEvent) => {
+    const id = href.split("#")[1];
+    if (pathname === "/") {
       const el = document.getElementById(id);
-      if (el && window.scrollY >= el.offsetTop - 100) {
-        setActiveLink(`#${id}`);
-        break;
+      if (el) {
+        e.preventDefault();
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        window.history.pushState(null, "", href);
       }
     }
+    setActiveLink(href);
+    setMenuOpen(false);
+  }, [pathname]);
+
+  const handleScroll = useCallback(() => {
+    setScrolled(window.scrollY > 20);
+
+    // Pick the section with the greatest offsetTop that's still above the
+    // current scroll position — this reflects actual document order instead
+    // of assuming NAV_LINKS is declared in the same order as the page.
+    let current = "";
+    let maxOffset = -Infinity;
+    for (const link of NAV_LINKS) {
+      const el = document.getElementById(link.href.split("#")[1]);
+      if (el && window.scrollY >= el.offsetTop - 100 && el.offsetTop > maxOffset) {
+        maxOffset = el.offsetTop;
+        current = link.href;
+      }
+    }
+    setActiveLink(current);
   }, []);
 
   useEffect(() => {
@@ -75,6 +99,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  onClick={handleNavClick(link.href)}
                   className={cn(
                     "px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200",
                     activeLink === link.href
@@ -130,7 +155,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              onClick={() => setMenuOpen(false)}
+              onClick={handleNavClick(link.href)}
               className="px-4 py-3 text-base font-medium rounded-xl text-gray-800
                          hover:bg-primary-50 hover:text-primary transition-colors"
             >

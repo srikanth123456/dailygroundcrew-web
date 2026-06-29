@@ -1,27 +1,31 @@
+"use client";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import AppImage from "@/components/ui/AppImage";
 import VisitCounter from "@/components/ui/VisitCounter";
 
 const QUICK_LINKS = [
-  { label: "Features",      href: "#features" },
-  { label: "How It Works",  href: "#how-it-works" },
-  { label: "Toolkit",       href: "#toolkit" },
-  { label: "Categories",    href: "#categories" },
-  { label: "About",         href: "#about" },
+  { label: "Features",      href: "/#features" },
+  { label: "How It Works",  href: "/#how-it-works" },
+  { label: "Toolkit",       href: "/#toolkit" },
+  { label: "Categories",    href: "/#categories" },
+  { label: "About",         href: "/#about" },
 ];
 
 const FOR_USERS = [
-  { label: "Find Workers",      href: "#categories" },
-  { label: "Post Jobs",         href: "#features" },
-  { label: "Site Manager",      href: "#features" },
-  { label: "Tools & Calculators", href: "#toolkit" },
+  { label: "Hire Workers",          href: "/hire-construction-workers" },
+  { label: "Equipment Rental",      href: "/construction-equipment-rental" },
+  { label: "Buy Materials",         href: "/buy-construction-materials" },
+  { label: "Construction Estimator",href: "/construction-estimator" },
+  { label: "Buy/Rent/Sell Property",href: "/buy-rent-sell-property" },
+  { label: "Bulk Contracts",        href: "/construction-contracts" },
 ];
 
 const SUPPORT_LINKS = [
-  { label: "Help Center",       href: "#faq" },
+  { label: "Help Center",       href: "/#faq" },
   { label: "Terms & Conditions",href: "/terms" },
   { label: "Privacy Policy",    href: "/privacy" },
-  { label: "Contact Us",        href: "#contact" },
+  { label: "Contact Us",        href: "/#contact" },
 ];
 
 const SOCIAL = [
@@ -64,6 +68,21 @@ const SOCIAL = [
 ];
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  // Next.js Link doesn't auto-scroll to a hash when the pathname is unchanged
+  // (e.g. clicking "/#features" while already on "/"), so handle it manually.
+  const handleAnchorClick = (href: string) => (e: React.MouseEvent) => {
+    if (!href.includes("#") || pathname !== "/") return;
+    const id = href.split("#")[1];
+    const el = document.getElementById(id);
+    if (el) {
+      e.preventDefault();
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      window.history.pushState(null, "", href);
+    }
+  };
+
   return (
     <footer className="bg-primary text-white" role="contentinfo">
       <div className="container-xl py-16">
@@ -107,7 +126,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {QUICK_LINKS.map(l => (
                 <li key={l.href}>
-                  <Link href={l.href} className="text-white/75 hover:text-white text-sm transition-colors">
+                  <Link href={l.href} onClick={handleAnchorClick(l.href)} className="text-white/75 hover:text-white text-sm transition-colors">
                     {l.label}
                   </Link>
                 </li>
@@ -115,9 +134,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* For users */}
+          {/* Solutions */}
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wider text-white/50 mb-4">For Users</h3>
+            <h3 className="font-semibold text-sm uppercase tracking-wider text-white/50 mb-4">Solutions</h3>
             <ul className="space-y-2.5">
               {FOR_USERS.map(l => (
                 <li key={l.label}>
@@ -135,7 +154,7 @@ export default function Footer() {
             <ul className="grid grid-cols-2 lg:grid-cols-1 gap-2.5 lg:space-y-2.5">
               {SUPPORT_LINKS.map(l => (
                 <li key={l.label}>
-                  <Link href={l.href} className="text-white/75 hover:text-white text-sm transition-colors">
+                  <Link href={l.href} onClick={handleAnchorClick(l.href)} className="text-white/75 hover:text-white text-sm transition-colors">
                     {l.label}
                   </Link>
                 </li>

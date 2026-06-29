@@ -111,6 +111,31 @@ const jsonLd = {
         bestRating: "5",
       },
     },
+    {
+      "@type": "SoftwareApplication",
+      name: "DailyGroundCrew",
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Android",
+      description:
+        "Construction estimator, brick calculator, site attendance and worker hiring app for contractors and builders in India",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      url: "https://dailygroundcrew.com",
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://dailygroundcrew.com/#local",
+      name: "DailyGroundCrew",
+      url: "https://dailygroundcrew.com",
+      image: "https://dailygroundcrew.com/logo.png",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Hyderabad",
+        addressRegion: "Telangana",
+        addressCountry: "IN",
+      },
+      areaServed: "IN",
+      priceRange: "Free",
+    },
   ],
 };
 
