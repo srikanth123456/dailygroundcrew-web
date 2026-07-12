@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.dailygroundcrew.app",
+      "sha256_cert_fingerprints": [
+        "E6:01:08:90:AB:E1:E6:59:7E:58:2C:08:C1:D0:16:42:1E:E2:0B:82:73:B0:F7:A1:01:6E:83:B7:96:10:7C:3C"
+      ]
+    }
+  }
+]
