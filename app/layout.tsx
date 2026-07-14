@@ -18,11 +18,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.dailygroundcrew.com"),
   title: {
-    default: "DailyGroundCrew – Find & Hire Skilled Workers Fast",
+    default: "DailyGroundCrew (Daily Ground Crew) – Find & Hire Skilled Workers Fast",
     template: "%s | DailyGroundCrew",
   },
   description:
-    "India's leading construction workforce platform. Hire masons, carpenters, electricians & more. Manage sites, rent equipment, buy materials and use 100+ construction tools.",
+    "DailyGroundCrew — India's leading construction workforce platform. Hire masons, carpenters, electricians & more. Manage sites, rent equipment, buy materials and use 100+ construction tools.",
   keywords: [
     "hire construction workers India",
     "find skilled workers",
@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     "daily wage workers India",
     "construction estimator",
     "DailyGroundCrew",
+    "daily ground crew",
+    "Daily Ground Crew app",
+    "daily ground crew construction app",
   ],
   authors: [{ name: "DailyGroundCrew", url: "https://www.dailygroundcrew.com" }],
   creator: "DailyGroundCrew",
@@ -75,6 +78,7 @@ const jsonLd = {
       "@type": "Organization",
       "@id": "https://www.dailygroundcrew.com/#org",
       name: "DailyGroundCrew",
+      alternateName: ["Daily Ground Crew", "Daily GroundCrew"],
       url: "https://www.dailygroundcrew.com",
       logo: "https://www.dailygroundcrew.com/logo.png",
       contactPoint: {
@@ -93,6 +97,7 @@ const jsonLd = {
       "@id": "https://www.dailygroundcrew.com/#website",
       url: "https://www.dailygroundcrew.com",
       name: "DailyGroundCrew",
+      alternateName: "Daily Ground Crew",
       description: "India's trusted platform to find & hire skilled construction workers",
       publisher: { "@id": "https://www.dailygroundcrew.com/#org" },
     },
