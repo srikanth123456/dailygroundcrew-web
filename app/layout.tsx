@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | DailyGroundCrew",
   },
   description:
-    "DailyGroundCrew — India's leading construction workforce platform. Hire masons, carpenters, electricians & more. Manage sites, rent equipment, buy materials and use 100+ construction tools.",
+    "DailyGroundCrew — India's all-in-one construction platform. Hire masons, carpenters, electricians & more. Manage sites, rent equipment, buy materials and use free construction tools.",
   keywords: [
     "hire construction workers India",
     "find skilled workers",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DailyGroundCrew – Find & Hire Skilled Workers Fast",
     description:
-      "India's leading construction workforce platform. Hire workers, manage sites, rent equipment & use 100+ tools.",
+      "India's all-in-one construction platform. Hire workers, manage sites, rent equipment and use free construction tools.",
     creator: "@dailygroundcrew",
   },
   alternates: { canonical: "https://www.dailygroundcrew.com" },
@@ -107,14 +107,10 @@ const jsonLd = {
       operatingSystem: "Android, iOS",
       applicationCategory: "BusinessApplication",
       description:
-        "Hire construction workers, manage sites, rent equipment, buy materials and use 100+ tools",
+        "Hire construction workers, manage sites, rent equipment, buy materials and use free construction tools",
       offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.8",
-        ratingCount: "1200",
-        bestRating: "5",
-      },
+      downloadUrl: "https://play.google.com/store/apps/details?id=com.dailygroundcrew.app",
+      installUrl: "https://play.google.com/store/apps/details?id=com.dailygroundcrew.app",
     },
     {
       "@type": "SoftwareApplication",

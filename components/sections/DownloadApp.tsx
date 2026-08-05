@@ -22,11 +22,11 @@ export default function DownloadApp() {
                 Available Now
               </span>
               <h2 id="download-heading" className="text-4xl md:text-5xl font-extrabold leading-tight text-white">
-                Join thousands building better every day.
+                Build smarter, every day.
               </h2>
               <p className="text-white/80 text-lg leading-relaxed max-w-lg">
                 Download DailyGroundCrew and grow your construction business.
-                Find workers, manage sites and access 100+ free tools.
+                Find workers, manage sites and access 11 free construction tools.
               </p>
             </div>
 
@@ -67,21 +67,9 @@ export default function DownloadApp() {
               </a>
             </div>
 
-            {/* Rating strip */}
+            {/* Info strip */}
             <div className="flex items-center gap-6 pt-2">
-              <div className="flex items-center gap-2">
-                <div className="flex gap-0.5">
-                  {[1,2,3,4,5].map(i => (
-                    <svg key={i} viewBox="0 0 20 20" className="w-4 h-4 fill-accent" aria-hidden>
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                    </svg>
-                  ))}
-                </div>
-                <span className="text-white font-bold">4.8/5</span>
-                <span className="text-white/60 text-sm">App Rating</span>
-              </div>
-              <div className="h-5 w-px bg-white/20" aria-hidden />
-              <p className="text-white/80 text-sm">Free forever for workers & contractors</p>
+              <p className="text-white/80 text-sm">100+ early users — free forever for workers &amp; contractors</p>
             </div>
           </div>
 

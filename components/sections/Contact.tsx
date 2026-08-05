@@ -124,7 +124,7 @@ export default function Contact() {
               <p className="text-white/80 text-sm leading-relaxed">
                 DailyGroundCrew is India&apos;s trusted construction workforce platform,
                 connecting contractors, builders and site managers with skilled workers
-                across 50+ cities. Our mission is to make construction work faster,
+                across India. Our mission is to make construction work faster,
                 fairer and more transparent for everyone.
               </p>
               <p className="text-white/60 text-xs">

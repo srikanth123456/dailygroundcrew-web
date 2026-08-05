@@ -5,11 +5,11 @@ import PlaceholderImage from "@/components/ui/PlaceholderImage";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
 const CATEGORIES = [
-  { name: "Mason",        count: "4,250+", image: "/assets/mason.png" },
-  { name: "Carpenter",    count: "2,800+", image: "/assets/carpenter.png" },
-  { name: "Electrician",  count: "3,120+", image: "/assets/electrician.png" },
-  { name: "Painter",      count: "2,100+", image: "/assets/painter.png" },
-  { name: "Plumber",      count: "1,950+", image: "/assets/plumber.png" },
+  { name: "Mason",        count: "Hiring Now", image: "/assets/mason.png" },
+  { name: "Carpenter",    count: "Hiring Now", image: "/assets/carpenter.png" },
+  { name: "Electrician",  count: "Hiring Now", image: "/assets/electrician.png" },
+  { name: "Painter",      count: "Hiring Now", image: "/assets/painter.png" },
+  { name: "Plumber",      count: "Hiring Now", image: "/assets/plumber.png" },
 ];
 
 export default function WorkerCategories() {
@@ -31,7 +31,7 @@ export default function WorkerCategories() {
           </h2>
           <p className="section-sub">
             Find verified, skilled workers across all construction trades.
-            Available in 50+ cities across India.
+            Available pan-India across all major cities.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export default function WorkerCategories() {
               href="#download"
               className="card overflow-hidden group cursor-pointer"
               style={{ transitionDelay: `${i * 50}ms` }}
-              aria-label={`Find ${cat.name} workers — ${cat.count} available`}
+              aria-label={`Find ${cat.name} workers — ${cat.count}`}
             >
               <div className="aspect-square overflow-hidden">
                 {cat.image ? (

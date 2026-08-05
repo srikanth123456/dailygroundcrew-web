@@ -48,7 +48,7 @@ export default async function OpengraphImage() {
             textAlign: "center",
           }}
         >
-          25,000+ Workers · 8,000+ Contractors · 50+ Cities in India
+          14+ Skill Types · 11 Free Tools · 6 Marketplaces · 100+ Downloads
         </div>
       </div>
     ),

@@ -1,12 +1,12 @@
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
-import { Users, Briefcase, CheckSquare, MapPin, Star } from "lucide-react";
+import { Users, Wrench, ShoppingBag, FileText, IndianRupee } from "lucide-react";
 
 const STATS = [
-  { icon: Users,       target: 25000, suffix: "+", label: "Workers",        color: "text-secondary" },
-  { icon: Briefcase,   target: 8000,  suffix: "+", label: "Contractors",    color: "text-primary" },
-  { icon: CheckSquare, target: 120000,suffix: "+", label: "Jobs Completed", color: "text-emerald-600" },
-  { icon: MapPin,      target: 50,    suffix: "+", label: "Cities Covered", color: "text-orange-500" },
-  { icon: Star,        target: 4.8,   suffix: "★", label: "Average Rating", color: "text-accent" },
+  { icon: Users,       target: 14,  suffix: "+", label: "Skill Types",      color: "text-secondary" },
+  { icon: Wrench,      target: 11,  suffix: "",  label: "Free Tools",       color: "text-primary" },
+  { icon: ShoppingBag, target: 6,   suffix: "",  label: "Marketplaces",     color: "text-emerald-600" },
+  { icon: FileText,    target: 7,   suffix: "",  label: "Contract Types",   color: "text-orange-500" },
+  { icon: IndianRupee, target: 100, suffix: "+", label: "App Downloads",    color: "text-accent" },
 ];
 
 export default function Statistics() {
@@ -17,7 +17,7 @@ export default function Statistics() {
     >
       <div className="container-xl">
         <p className="text-center text-white/60 text-sm font-semibold uppercase tracking-widest mb-10">
-          Platform Highlights
+          What We Offer
         </p>
         <h2 id="stats-heading" className="sr-only">Platform Statistics</h2>
 

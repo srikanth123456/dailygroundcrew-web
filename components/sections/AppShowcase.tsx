@@ -54,12 +54,12 @@ export default function AppShowcase() {
 
             {/* Floating stats */}
             <div className="absolute top-1/4 -right-4 bg-white rounded-2xl shadow-card-hover p-3 border border-gray-100 hidden md:block" aria-hidden>
-              <p className="text-xs text-gray-500 font-medium">Jobs Posted</p>
-              <p className="text-2xl font-bold text-primary">1.2L+</p>
+              <p className="text-xs text-gray-500 font-medium">Free Tools</p>
+              <p className="text-2xl font-bold text-primary">11</p>
             </div>
             <div className="absolute bottom-1/4 -left-4 bg-white rounded-2xl shadow-card-hover p-3 border border-gray-100 hidden md:block" aria-hidden>
-              <p className="text-xs text-gray-500 font-medium">Active Workers</p>
-              <p className="text-2xl font-bold text-secondary">25K+</p>
+              <p className="text-xs text-gray-500 font-medium">Skill Types</p>
+              <p className="text-2xl font-bold text-secondary">14+</p>
             </div>
           </div>
 

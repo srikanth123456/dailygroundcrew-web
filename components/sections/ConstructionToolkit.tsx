@@ -25,7 +25,7 @@ export default function ConstructionToolkit() {
           </span>
           <h2 id="toolkit-heading" className="section-heading">Construction Toolkit</h2>
           <p className="section-sub">
-            100+ free construction calculators and tools — available offline, no login required.
+            11 free construction calculators and tools — available offline, no login required.
           </p>
         </div>
 

@@ -6,7 +6,7 @@ import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
 const SERVICES = [
   {
-    icon: Truck,     title: "Rent Equipment",  desc: "JCBs, cranes, mixers, scaffolding and 50+ machines on rent",              image: "/assets/rent-equipment.png",  color: "text-orange-600 bg-orange-50",
+    icon: Truck,     title: "Rent Equipment",  desc: "JCBs, cranes, mixers, scaffolding and construction machines on rent",     image: "/assets/rent-equipment.png",  color: "text-orange-600 bg-orange-50",
   },
   {
     icon: Building2, title: "Site Management", desc: "Workforce tracking, daily attendance, payments and reports",               image: "/assets/site-management.png", color: "text-primary bg-primary-50",
