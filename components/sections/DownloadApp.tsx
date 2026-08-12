@@ -19,7 +19,7 @@ export default function DownloadApp() {
           <div className="space-y-8 text-white">
             <div className="space-y-4">
               <span className="inline-block px-3 py-1 bg-white/20 text-white text-sm font-semibold rounded-full">
-                Available Now
+                Available on Android &amp; iOS
               </span>
               <h2 id="download-heading" className="text-4xl md:text-5xl font-extrabold leading-tight text-white">
                 Build smarter, every day.
@@ -52,7 +52,9 @@ export default function DownloadApp() {
               </a>
 
               <a
-                href="#"
+                href="https://apps.apple.com/app/id6794195520"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-black text-white px-6 py-3.5 rounded-xl
                            hover:bg-gray-900 transition-colors border border-white/10"
                 aria-label="Download DailyGroundCrew on App Store"

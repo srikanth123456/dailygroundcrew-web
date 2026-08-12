@@ -90,6 +90,7 @@ const jsonLd = {
       },
       sameAs: [
         "https://play.google.com/store/apps/details?id=com.dailygroundcrew.app",
+        "https://apps.apple.com/app/id6794195520",
       ],
     },
     {
@@ -111,6 +112,10 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
       downloadUrl: "https://play.google.com/store/apps/details?id=com.dailygroundcrew.app",
       installUrl: "https://play.google.com/store/apps/details?id=com.dailygroundcrew.app",
+      sameAs: [
+        "https://play.google.com/store/apps/details?id=com.dailygroundcrew.app",
+        "https://apps.apple.com/app/id6794195520",
+      ],
     },
     {
       "@type": "SoftwareApplication",
