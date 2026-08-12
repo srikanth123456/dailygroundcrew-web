@@ -98,14 +98,19 @@ export default function AppShowcase() {
                 href="https://play.google.com/store/apps/details?id=com.dailygroundcrew.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 bg-gray-900 text-white px-5 py-3 rounded-xl
-                           hover:bg-gray-800 transition-colors"
+                className="inline-flex items-center gap-2.5 bg-black text-white px-5 py-3 rounded-xl
+                           hover:bg-gray-900 transition-colors border border-gray-700"
                 aria-label="Get it on Google Play"
               >
-                <svg viewBox="0 0 24 24" className="w-6 h-6 fill-white" aria-hidden><path d="M3.18 23.76c.35.19.74.24 1.12.16L15.56 12 4.3.08A1.64 1.64 0 003 1.24v21.52c0 .38.08.74.18 1z"/><path d="M19.37 9.59l-2.65-1.51L14.1 12l2.62 2.92 2.65-1.51a1.87 1.87 0 000-3.82z"/><path d="M4.3.08L15.56 12 4.3 23.92l11.82-6.75L19.37 15l-3.81-3.81L19.37 9.59 16.12 7.51z"/></svg>
+                <svg viewBox="0 0 24 24" className="w-6 h-6 flex-shrink-0" aria-hidden fill="none">
+                  <path d="M3.609 1.814L13.792 12 3.61 22.186A1 1 0 013 21.27V2.734a1 1 0 01.609-.92z" fill="#EA4335"/>
+                  <path d="M21.042 10.908l-3.642-2.046L14.652 12l2.748 3.138 3.647-2.047a1 1 0 00-.005-2.183z" fill="#FBBC04"/>
+                  <path d="M3.61 1.814L13.792 12 17.4 8.862 5.428 2.184A1 1 0 003.61 1.814z" fill="#4285F4"/>
+                  <path d="M3.61 22.186l1.818-.37L17.4 15.138 13.792 12 3.61 22.186z" fill="#34A853"/>
+                </svg>
                 <div>
-                  <p className="text-xs text-gray-300">Get it on</p>
-                  <p className="text-sm font-semibold -mt-0.5">Google Play</p>
+                  <p className="text-[10px] text-gray-400 leading-none tracking-wide">GET IT ON</p>
+                  <p className="text-sm font-bold leading-none mt-0.5">Google Play</p>
                 </div>
               </a>
 
@@ -113,14 +118,14 @@ export default function AppShowcase() {
                 href="https://apps.apple.com/app/id6794195520"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 bg-gray-900 text-white px-5 py-3 rounded-xl
-                           hover:bg-gray-800 transition-colors"
+                className="inline-flex items-center gap-2.5 bg-black text-white px-5 py-3 rounded-xl
+                           hover:bg-gray-900 transition-colors border border-gray-700"
                 aria-label="Download DailyGroundCrew on App Store"
               >
-                <svg viewBox="0 0 24 24" className="w-6 h-6 fill-white" aria-hidden><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                <svg viewBox="0 0 24 24" className="w-6 h-6 fill-white flex-shrink-0" aria-hidden><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                 <div>
-                  <p className="text-xs text-gray-300">Download on</p>
-                  <p className="text-sm font-semibold -mt-0.5">App Store</p>
+                  <p className="text-[10px] text-gray-400 leading-none tracking-wide">DOWNLOAD ON THE</p>
+                  <p className="text-sm font-bold leading-none mt-0.5">App Store</p>
                 </div>
               </a>
             </div>
